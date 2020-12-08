@@ -27,3 +27,5 @@ blueButton.addEventListener('click', () => {
 	tagTop.style.background = 'lightblue';
 	tagBottom.style.background = 'lightblue';
 });
+
+// ideally would write a function (colorButton) that would take a color as an argument based on which button was clicked, rather than all these copypasted events

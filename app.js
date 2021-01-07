@@ -1,31 +1,19 @@
-const myButton = document.getElementById('my-button');
-const myInput = document.getElementById('my-input');
-const myName = document.getElementById('my-name');
+const userInput = document.getElementById('name-input');
+const displayBox = document.getElementById('name-box');
 
-const greenButton = document.getElementById('green-button');
-const pinkButton = document.getElementById('pink-button');
-const blueButton = document.getElementById('blue-button');
-const tagTop = document.getElementById('tag-top');
-const tagBottom = document.getElementById('tag-bottom');
+const nameButton = document.getElementById('submit-name');
 
-myButton.addEventListener('click', () => {
-	myName.textContent = myInput.value;
-	myInput.value = '';
-});
+// for later deployment
+/*
+const pronounButton = document.getElementById('submit-pronouns');
+const resetButton = document.getElementById('reset');
+const secretButton = document.getElementById('secret-button');
+*/
 
-greenButton.addEventListener('click', () => {
-	tagTop.style.background = 'lightgreen';
-	tagBottom.style.background = 'lightgreen';
-});
+console.log('I am linked');
+console.log(userInput, displayBox, nameButton);
 
-pinkButton.addEventListener('click', () => {
-	tagTop.style.background = 'pink';
-	tagBottom.style.background = 'pink';
-});
-
-blueButton.addEventListener('click', () => {
-	tagTop.style.background = 'lightblue';
-	tagBottom.style.background = 'lightblue';
-});
-
-// ideally would write a function (colorButton) that would take a color as an argument based on which button was clicked, rather than all these copypasted events
+nameButton.addEventListener('click', () => {
+	displayBox.textContent = userInput.value;
+	userInput.style.display = 'none';
+})

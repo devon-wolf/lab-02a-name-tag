@@ -12,33 +12,66 @@ body, html {
 body {
 	background-color: rgb(172, 166, 144);
 	font-family: courier;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 header {
 	color: lightgrey;
 	background-color: teal;
-	padding: 2%;
 	font-weight: bolder;
+	font-size: xx-large;
+	padding: 1rem;
 }
 
 .mid-body {
-	height: 100%;
 	display: grid;
 	grid-template-columns: 90% 10%;
+	height: 100%;
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-	padding: 5%;
+
+	display: grid;
+	grid-template-columns: 60% 40%;
 }
 
 aside {
 	background-color: lightgrey;
-	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.style-buttons {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.style-buttons button {
+	border: solid 1px rgb(90, 52, 90);
+	width: 60%;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button {
+	background-color: lightgrey;
+	font-family: courier;
+	width: 35%;
+	padding: 5%;
+	margin: 5%;
+	border: none;
+	border-radius: 5px;
 }
 
 .tag {
@@ -46,6 +79,9 @@ aside {
 	border-radius: 15px;
 	height: 20rem;
 	width: 30rem;
+	margin: 5%;
+	justify-self: right;
+	align-self: center;
 	display: grid;
 	grid-template-rows: 1fr 1.5fr .5fr;
 }
@@ -78,16 +114,38 @@ aside {
 }
 
 .middle {
-	background-color: lightgrey;
+	
 }
 
-.name-text {
+#name-box {
 	font-size: xx-large;
 	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	background-color: lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#name-input {
+	height: 100%;
+	width: 100%;
+	background-color: lightgrey;
+	border: 1.5px dashed teal;
+	text-align: center;
+	font-size: xx-large;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 footer {
 	background-color: rgb(90, 52, 90);
 	color: lightgrey;
-	padding: 2%;
+	padding: 1rem;
 }
